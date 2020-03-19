@@ -22,6 +22,6 @@ public $cesta;
     }
 }
 
-$galerie = new Galerie("galerie/");
+$galerie = new Galerie("");
 
 ($galerie->obrazky());
