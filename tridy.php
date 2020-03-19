@@ -12,7 +12,7 @@ public $precteni;
     public function obrazky ()
     {
         $pole_obr = "";
-        $obrazky = glob($this->cesta . "*");
+        $obrazky = glob($this->precteni . "*");
 
         foreach($obrazky as $s){
             $pole_obr .= $s . " ";
