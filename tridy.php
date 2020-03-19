@@ -2,26 +2,26 @@
 
 class Galerie
 {
-public $cesta;
+public $precteni;
 
-    public function __construct($cesta)
+    public function __construct($precteni)
     {
-        $this->cesta = $cesta;
+        $this->precteni = $precteni;
     }
 
     public function obrazky ()
     {
-        $pole = "";
+        $pole_obr = "";
         $obrazky = glob($this->cesta . "*");
 
-        foreach($obrazky as $obrazek){
-            $pole .= $obrazek . " ";
+        foreach($obrazky as $s){
+            $pole_obr .= $s . " ";
         }
 
-        return explode(" ", trim($pole));
+        return explode(" ", trim($pole_obr));
     }
 }
 
-$galerie = new Galerie("");
+$galerie = new Galerie("galerie/");
 
 ($galerie->obrazky());

@@ -3,8 +3,8 @@ include("tridy.php");
 
 $moje_obrazky = "";
 
-    foreach($galerie->obrazky() as $obrazek){
-$moje_obrazky .=  "<img src='" . $obrazek .  "'alt=''>";
+    foreach($galerie->obrazky() as $s){
+$moje_obrazky .=  "<img src='" . $s .  "'alt=''>";
     }
 
 ?>
