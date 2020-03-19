@@ -1,4 +1,11 @@
 <?php
+
+object moje_galerie{
+
+    foreach{
+        
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
