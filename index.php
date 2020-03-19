@@ -1,11 +1,12 @@
 <?php
+include("tridy.php");
 
-object moje_galerie{
+$moje_obrazky = "";
 
-    foreach{
-        
+    foreach($galerie->obrazky() as $obrazek){
+$moje_obrazky .=  "<img src='" . $obrazek .  "'alt=''>";
     }
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +20,6 @@ object moje_galerie{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
 </head>
 <body>
-    
+<?php echo $moje_obrazky ?>
 </body>
 </html>
